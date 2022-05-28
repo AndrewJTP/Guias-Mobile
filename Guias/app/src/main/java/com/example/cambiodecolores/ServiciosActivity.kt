@@ -9,6 +9,10 @@ class ServiciosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_servicios)
+
+        supportActionBar.let {
+            it?.setDisplayHomeAsUpEnabled(true)
+            it?.setDisplayShowHomeEnabled(true) }
     }
 }
 
