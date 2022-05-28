@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">CambioDeColores</string>
-    <string name="description_label">Cambio de Colores</string>
-    <string name="btn_red_label">Rojo</string>
-    <string name="btn_white_label">Blanco</string>
+    <string name="description_label">Mi aplicacion de Negocios</string>
+    <string name="btn_servicios_label">Servicios</string>
+    <string name="btn_portafolio_label">Portafolio</string>
+    <string name="btn_about_label">Acerca de</string>
+    <string name="btn_contacto_label">Contacto</string>
+    <string name="btn_redes_label">Redes Sociales</string>
 </resources>

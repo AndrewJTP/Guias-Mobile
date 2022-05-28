@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
     android:orientation="vertical"
     android:id="@+id/layout_main">
 
@@ -13,32 +12,72 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/description_label"
-        app:layout_constraintBottom_toTopOf="@+id/red_btn"
+        app:layout_constraintBottom_toTopOf="@+id/textVariable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
-
-    <Button
-        android:id="@+id/red_btn"
+    <TextView
+        android:id="@+id/textVariable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_red_label"
-        app:layout_constraintBottom_toTopOf="@+id/white_btn"
+        android:text="Boton Seleccionado"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/servicios_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/servicios_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_servicios_label"
+        app:layout_constraintTop_toBottomOf="@+id/textVariable"
+        app:layout_constraintBottom_toTopOf="@+id/potafolio_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
-        android:id="@+id/white_btn"
-        android:layout_width="wrap_content"
+        android:id="@+id/potafolio_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_white_label"
+        android:text="@string/btn_portafolio_label"
+        app:layout_constraintTop_toBottomOf="@+id/servicios_btn"
+        app:layout_constraintBottom_toBottomOf="@id/about_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/about_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_about_label"
+        app:layout_constraintTop_toBottomOf="@+id/potafolio_btn"
+        app:layout_constraintBottom_toBottomOf="@id/contacto_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/contacto_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_contacto_label"
+        app:layout_constraintTop_toBottomOf="@+id/about_btn"
+        app:layout_constraintBottom_toBottomOf="@id/redes_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/redes_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_redes_label"
+        app:layout_constraintTop_toBottomOf="@+id/contacto_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/red_btn" />
+        app:layout_constraintStart_toStartOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
